@@ -50,8 +50,11 @@ let ent = genRandom(fun)
             }
         }
 let check3 = prompt('Are you happy with these changes?')
-    if(check3 = "yes"){
+    if(check3 === "yes"){
         console.log('Perfect your trip is confirmed!')
     }
-    else(check3 = "no")
-        console.log("You may need to just curl up in bed and watch a movie...Or refresh and try again :)")
+    else(check3 !== 'yes')
+        console.log('Lets try opening up to more possibilities')
+        console.log(userInput)
+
+    
